@@ -13,6 +13,7 @@ namespace PrimeNumber.Views
             Console.WriteLine("2. Show a list of saved Prime Numbers");
             Console.WriteLine("3. Add next Prime number from the highest number in the list");
             Console.WriteLine("4. Exit");
+            Console.Write("\nEnter choice: ");
         }
     }
 }
