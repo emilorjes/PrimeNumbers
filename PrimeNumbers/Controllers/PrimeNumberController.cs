@@ -68,7 +68,7 @@ namespace PrimeNumber.Controllers
                 }
                 else // Else, prints error message.
                 {
-                    ErrorMessage.IsNotANumber(input);
+                    ErrorMessage.IsEitherToBigOrNotANumber(input);
                 }
                 Console.ReadLine();
             }
@@ -96,6 +96,12 @@ namespace PrimeNumber.Controllers
             bool keepSearchingForPrime = true;
             while (keepSearchingForPrime) // While the keepSearchingForPrime bool is true the while loop will loop.
             {
+                if (highestNumber == int.MaxValue) // If highestNumber is equal to int.MaxValue, print error message and break loop.
+                {
+                    ErrorMessage.BiggestNumberForThisProgam();
+                    break;
+                }
+
                 bool isPrime = PrimeNumberHelper.IsPrimeNumber(nextNumberToCheckIfIsPrime); // The isPrime bool is set with the isPrimeNumber() method that checks if the nextNumberToCheckIfIsPrime is a prime.
                 if (isPrime) // If isPrime is true diffrent states are checked.
                 {

@@ -11,10 +11,13 @@ namespace PrimeNumber.Messages
         {
             Console.WriteLine("The input needs to match one of the menuchoice (1-4)");
         }
-
-        public static void IsNotANumber(string input)
+        public static void BiggestNumberForThisProgam()
         {
-            Console.WriteLine($"The input [{input}] Is NOT a number");
+            Console.WriteLine($"You cant add any more prime numbers because {int.MaxValue} is the biggest number you can check in this program.");
+        }
+        public static void IsEitherToBigOrNotANumber(string input)
+        {
+            Console.WriteLine($"The input [{input}] is either to big or is not a number. ( Biggest number for this program is: {int.MaxValue}) ");
         }
 
         public static void ListIsEmpty()
