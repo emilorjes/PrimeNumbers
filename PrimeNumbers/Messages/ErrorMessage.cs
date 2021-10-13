@@ -7,13 +7,14 @@ namespace PrimeNumber.Messages
     /// </summary>
     public static class ErrorMessage
     {
-        public static void InputNeedsToMatchOneOfTheMenuChoice()
-        {
-            Console.WriteLine("The input needs to match one of the menuchoice (1-4)");
-        }
         public static void BiggestNumberForThisProgam()
         {
             Console.WriteLine($"You cant add any more prime numbers because {int.MaxValue} is the biggest number you can check in this program.");
+        }
+
+        public static void InputNeedsToMatchOneOfTheMenuChoice()
+        {
+            Console.WriteLine("The input needs to match one of the menuchoice (1-4)");
         }
         public static void IsEitherToBigOrNotANumber(string input)
         {
@@ -34,6 +35,7 @@ namespace PrimeNumber.Messages
         {
             Console.WriteLine("The input cant be empty, you need to have an input!");
         }
+
         public static void NeitherPrimeNorComposite(int number)
         {
             Console.WriteLine($"The number [{number}] is either Prime or Composite");
